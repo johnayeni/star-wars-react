@@ -54,9 +54,9 @@ const CharactersTable: React.FC<Props> = ({
         <>
           {!loading && (
             <div className={styles.filter}>
-              <label>Gender</label>
-              <select value={genderFilter} onChange={filterOnChange} title="Gender">
-                <option>Gender</option>
+              <label htmlFor="gender">Gender</label>
+              <select id="gender" value={genderFilter} onChange={filterOnChange} title="Gender">
+                <option value="">Gender</option>
                 {Genders.map((gender) => (
                   <option key={gender} value={gender}>
                     {gender}
