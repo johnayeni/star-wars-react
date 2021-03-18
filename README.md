@@ -9,8 +9,8 @@ A simple react app that shows info about star wars movies.
 ## Local setup
 
 - Clone this repo `git clone git@github.com:johnayeni/star-wars-react.git`.
-- Install dependencies `npm install`.
+- Install dependencies `yarn install`.
 - Create a `.env` file using the `.env.example` file.
-- Start app `npm start`.
+- Start app `yarn start`.
 
 May the force be with you!
