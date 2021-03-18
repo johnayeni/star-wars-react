@@ -45,7 +45,7 @@
     transform: rotateX(5deg) translateZ(0);
   }
   100% {
-    top: -4000px;
+    top: -3000px;
     transform: rotateX(10deg) translateZ(-2500px);
   }
 }

@@ -69,15 +69,16 @@ const CharactersTable: React.FC<Props> = ({
             <thead>
               <tr>
                 <th onClick={toggleSortOrder("name")}>
-                  Name &nbsp;{sort.name ? sort?.name === "asc" ? <>&uarr;</> : <>&darr;</> : ""}
+                  Name &nbsp;
+                  {sort.name ? sort?.name === "asc" ? <>&uarr;</> : <>&darr;</> : <>&#8597;</>}
                 </th>
                 <th onClick={toggleSortOrder("gender")}>
                   Gender &nbsp;
-                  {sort.gender ? sort?.gender === "asc" ? <>&uarr;</> : <>&darr;</> : ""}
+                  {sort.gender ? sort?.gender === "asc" ? <>&uarr;</> : <>&darr;</> : <>&#8597;</>}
                 </th>
                 <th onClick={toggleSortOrder("height")}>
                   Height &nbsp;
-                  {sort.height ? sort?.height === "asc" ? <>&uarr;</> : <>&darr;</> : ""}
+                  {sort.height ? sort?.height === "asc" ? <>&uarr;</> : <>&darr;</> : <>&#8597;</>}
                 </th>
               </tr>
             </thead>
