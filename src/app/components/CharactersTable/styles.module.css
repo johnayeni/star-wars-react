@@ -21,6 +21,11 @@ th {
   box-sizing: border-box;
 }
 
+.table tr th:last-of-type,
+.table tr td:last-of-type {
+  text-align: right;
+}
+
 .table th {
   color: var(--yellow);
   text-transform: uppercase;
