@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.label {
+  display: block;
+  font-size: 48px;
+  color: var(--yellow);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--yellow);
+  background: none;
+  color: var(--white);
+  font-family: "Soloist";
+  font-size: 18px;
+  height: 60px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .label {
+    font-size: 32px;
+  }
+  .select {
+    font-size: 14px;
+  }
+}

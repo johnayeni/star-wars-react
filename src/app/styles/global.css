@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Soloist";
+  src: url("../assets/fonts/soloist.ttf");
+}
+
+:root {
+  --yellow: #f2f250;
+  --black: #000000;
+  --white: #ffffff;
+  --red: #e43a2f;
+}
+
+body {
+  margin: 0;
+  font-family: "Soloist", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--white);
+  letter-spacing: 2px;
+}

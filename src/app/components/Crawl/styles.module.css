@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  color: var(--yellow);
+  font-size: 48px;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 600px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  background: var(--black);
+  padding: 16px;
+  z-index: 1;
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    font-size: 24px;
+  }
+}
+
+.crawl {
+  position: relative;
+  transform-origin: 50% 100%;
+  animation: crawl 40s infinite;
+}
+
+.crawl:hover {
+  animation-play-state: paused;
+}
+
+@keyframes crawl {
+  0% {
+    top: 500px;
+    transform: rotateX(5deg) translateZ(0);
+  }
+  100% {
+    top: -4000px;
+    transform: rotateX(10deg) translateZ(-2500px);
+  }
+}
