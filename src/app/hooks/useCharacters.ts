@@ -56,7 +56,7 @@ export default function useCharacters(movieEpisode: string, characterUrls: Array
       if (cachedCharacters) {
         dispatch({ type: "success", payload: { characters: cachedCharacters } });
       } else {
-        const responses = await Promise.all(characterUrls.map(api.fetchCharacters));
+        const responses = await Promise.all(characterUrls.map(api.fetchCharacter));
         const characters = responses.map((response) => JSON.parse(response.contents));
         cache[movieEpisode] = characters;
         dispatch({ type: "success", payload: { characters: characters } });

@@ -6,9 +6,9 @@ const PROXY = process.env.REACT_APP_CORS_PROXY;
 const fetchMovies = async (): Promise<ProxyResponse> =>
   (await fetch(`${PROXY}${API_URL}/films`)).json();
 
-const fetchCharacters = async (characterUrl: string): Promise<ProxyResponse> =>
+const fetchCharacter = async (characterUrl: string): Promise<ProxyResponse> =>
   (await fetch(`${PROXY}${characterUrl}`)).json();
 
-const api = { fetchMovies, fetchCharacters };
+const api = { fetchMovies, fetchCharacter };
 
 export default api;
