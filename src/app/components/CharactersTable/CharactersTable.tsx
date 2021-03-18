@@ -88,7 +88,11 @@ const CharactersTable: React.FC<Props> = ({
                     <tr key={JSON.stringify(character)}>
                       <td>{character.name}</td>
                       <td>{formatCharacterGender(character.gender)}</td>
-                      <td>{character.height} cm</td>
+                      <td>
+                        {character.height !== "unknown"
+                          ? `${character.height} cm`
+                          : character.height}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
