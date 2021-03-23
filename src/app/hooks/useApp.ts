@@ -96,8 +96,8 @@ export default function useApp() {
     reload: handleReloadCharacters,
   } = useCharacters(String(selectedMovie?.episode_id || ""), selectedMovie?.characters || []);
 
-  const totalHeightOfCharacters = React.useMemo(() => getTotalHeightOfCharacters(characters), [
-    characters,
+  const totalHeightOfCharacters = React.useMemo(() => getTotalHeightOfCharacters(state.characters), [
+    state.characters,
   ]);
 
   const handleSetSelectedMovieEpisode = (selectedMovieEpisode: string) => {
